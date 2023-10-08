@@ -1,0 +1,57 @@
+name: clueminati_app
+description: Find clues and stuff for an event
+publish_to: com.codechefvit.clueminati
+version: 1.1.0
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  qr_code_scanner: ^1.0.1
+  firebase_auth: ^4.9.0
+  cloud_firestore: ^4.9.1
+  firebase_core: ^2.15.1
+  provider: ^6.0.5
+  flutter_native_splash: ^2.3.2
+  logger: ^2.0.2
+  connectivity_plus: ^4.0.2
+  flutter_exit_app: ^1.1.2
+  page_transition: ^2.1.0
+  auto_size_text: ^3.0.0
+  url_launcher: ^6.1.14
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk: 21
+
+flutter_native_splash:
+  color: "#3ccb25"
+  image: "assets/icon/c.png"
+  android_12:
+    color: "#3ccb25"
+    image: "assets/icon/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/png/
+    - assets/png/border/
+  fonts:
+    - family: Adieu
+      fonts:
+        - asset: assets/font/Adieu-Regular.ttf
